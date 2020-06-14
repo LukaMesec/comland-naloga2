@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div [ngClass]="setClasses()">
+        <div class="{{ todo.spol }}">
+          {{ todo.title }}
+          <p style="text-align: right;">
+            {{ todo.telephone }}{{ todo.email
+            }}<button (click)="onDelete(todo)" class="del">X</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
