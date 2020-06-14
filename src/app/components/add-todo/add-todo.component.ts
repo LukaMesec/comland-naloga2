@@ -15,8 +15,7 @@ export class AddTodoComponent implements OnInit {
   ngOnInit() {}
 
   onSubmit() {
-    console.log(this.email == undefined && this.telephone == undefined);
-    if (this.email == undefined) {
+    if (this.email == undefined && this.telephone == undefined) {
       const todo = {
         title: this.title,
         telephone: 'no contact information',
